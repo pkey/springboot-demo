@@ -1,18 +1,22 @@
 {
-    "name": "springboot-demo",
-    "description": "Springboot demo application",
-    "scripts": {},
-    "env": {},
-    "formation": {
-        "web": {
-            "quantity": 1
-        }
-    },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/gradle"
-        }
-    ],
-    "stack": "heroku-18"
+  "name": "springboot-demo",
+  "description": "Springboot demo application",
+  "scripts": {},
+  "env": {
+    "MONGODB_URI": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/gradle"
+    }
+  ],
+  "stack": "heroku-18"
 }
